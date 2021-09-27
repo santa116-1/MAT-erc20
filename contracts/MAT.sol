@@ -9,10 +9,7 @@ import "./access/Ownable.sol";
 contract MAT is BEP20, Ownable {
     using SafeBEP20 for IBEP20;
 
-    constructor()
-        // uint256 endReleaseTime_
-        BEP20("mymasterwar.com", "MAT")
-    {
+    constructor() BEP20("mymasterwar.com", "MAT") {
         _mint(
             0x83e9af907958d775385Eb24fb2716199329536Df,
             25000000000000000000000000
@@ -38,7 +35,7 @@ contract MAT is BEP20, Ownable {
             20000000000000000000000000
         ); //20% team + advisor
         _mint(
-            0x8C3913829a57dcC7D141CA1547D154b149D356a2,
+            0x913fC6Bb056127A7e93D1A7E0E3A1Cb9F21a0Aee,
             15000000000000000000000000
         ); //15% Play to earn
     }
